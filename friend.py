@@ -32,6 +32,7 @@ with open("friends.txt", "r") as file:
 
         #checks if friends are within 100km from stephens green
         if distance <= 100:
+            # appends a string of friend data in a specific format
             friend_list.append(f"Id: {friends['user_id']}, Name: {friends['name']}, {distance:.2f}km away")
 
 # function to get the user Id from friend's data in the list
@@ -44,3 +45,21 @@ sorted_friend_list = sorted(friend_list, key=getUserID)
 # prints output
 for friend in sorted_friend_list:
     print(friend)
+
+# Output of the code:
+# Id: 4, Name: Ian Kehoe, 10.41km away
+# Id: 5, Name: Nora Dempsey, 23.12km away
+# Id: 6, Name: Theresa Leaon, 23.90km away
+# Id: 8, Name: Eoin Ahearn, 83.72km away
+# Id: 11, Name: Richard Finnegan, 38.00km away
+# Id: 12, Name: Christina MacFarlane, 41.65km away
+# Id: 13, Name: Olive Ahearn, 62.03km away
+# Id: 15, Name: Michael Ahearn, 43.52km away
+# Id: 17, Name: Patricia Cahill, 96.28km away
+# Id: 23, Name: Eoin Rosan, 82.86km away
+# Id: 24, Name: Rose Leaon, 89.19km away
+# Id: 26, Name: Stephen MacFarlane, 98.70km away
+# Id: 29, Name: Oliver Ahearn, 72.22km away
+# Id: 30, Name: Nick Leaon, 82.64km away
+# Id: 31, Name: Alan Behan, 44.10km away
+# Id: 39, Name: Lisa Ahearn, 38.16km away
